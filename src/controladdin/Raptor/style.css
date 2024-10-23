@@ -1,0 +1,25 @@
+body {
+	overflow: hidden;
+}
+div#controlAddIn {
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+}
+.animate {
+	animation: moveup 0.8s ease-in-out 0s 1,
+			   movedown 0.2s ease-in-out 0.8s 1,
+			   moveleft 2s ease-in-out 1s 1;
+}
+@keyframes moveup {
+	from { bottom: -600px; } 
+	to { bottom: -10px; } 
+}
+@keyframes movedown {
+	from { bottom: -10px; } 
+	to { bottom: -30px; } 
+}
+@keyframes moveleft {
+	from { bottom: -30px; right: 0px; } 
+	to { bottom: -30px; right: 100vw; } 
+}
